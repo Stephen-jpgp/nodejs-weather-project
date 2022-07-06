@@ -12,7 +12,7 @@ const forecast = (lat, lon , callback) => {
         else {
             callback(undefined,{
                 temperature: body.current.temperature,
-                description: body.current.weather_descriptions
+                description: "The weather is " + body.current.weather_descriptions
             })
         }
     })
